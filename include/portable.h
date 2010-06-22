@@ -387,19 +387,19 @@
 /* #undef HAVE_NT_THREADS */
 
 /* define if you have OpenSSL */
-#define HAVE_OPENSSL 1
+/* #undef HAVE_OPENSSL */
 
 /* Define to 1 if you have the <openssl/bn.h> header file. */
 /* #undef HAVE_OPENSSL_BN_H */
 
 /* define if you have OpenSSL with CRL checking capability */
-#define HAVE_OPENSSL_CRL 1
+/* #undef HAVE_OPENSSL_CRL */
 
 /* Define to 1 if you have the <openssl/crypto.h> header file. */
 /* #undef HAVE_OPENSSL_CRYPTO_H */
 
 /* Define to 1 if you have the <openssl/ssl.h> header file. */
-#define HAVE_OPENSSL_SSL_H 1
+/* #undef HAVE_OPENSSL_SSL_H */
 
 /* Define to 1 if you have the `pipe' function. */
 #define HAVE_PIPE 1

@@ -97,6 +97,10 @@
 		A03ADE3911D1526400F5A51F /* stdio.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3311D14DED00F5A51F /* stdio.c */; };
 		A03ADE3A11D1529700F5A51F /* lber.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA0411D14DED00F5A51F /* lber.h */; };
 		A03ADE3B11D152A200F5A51F /* lber_types.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADDB411D14EB000F5A51F /* lber_types.h */; };
+		A0A53AD311D15941007EE6C4 /* tls2.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6D11D14DED00F5A51F /* tls2.c */; };
+		A0A53AD411D15941007EE6C4 /* tls_g.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6E11D14DED00F5A51F /* tls_g.c */; };
+		A0A53AD511D15941007EE6C4 /* tls_m.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6F11D14DED00F5A51F /* tls_m.c */; };
+		A0A53AD611D15941007EE6C4 /* tls_o.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7011D14DED00F5A51F /* tls_o.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -4231,6 +4235,10 @@
 				A03ADDF911D1500400F5A51F /* util-int.c in Sources */,
 				A03ADDFA11D1500400F5A51F /* vlvctrl.c in Sources */,
 				A03ADDFB11D1500400F5A51F /* whoami.c in Sources */,
+				A0A53AD311D15941007EE6C4 /* tls2.c in Sources */,
+				A0A53AD411D15941007EE6C4 /* tls_g.c in Sources */,
+				A0A53AD511D15941007EE6C4 /* tls_m.c in Sources */,
+				A0A53AD611D15941007EE6C4 /* tls_o.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
