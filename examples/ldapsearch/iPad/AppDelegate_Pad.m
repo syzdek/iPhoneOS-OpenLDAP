@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate_Pad.h"
+#import <ldap.h>
 
 @implementation AppDelegate_Pad
 
@@ -16,6 +17,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
     // Override point for customization after application launch
+
+   LDAP * ld;
+   ldap_initialize(&ld, "ldap://localhost/");
 	
     [window makeKeyAndVisible];
 	
