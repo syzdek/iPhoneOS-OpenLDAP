@@ -104,28 +104,28 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A03AD74211D14D0900F5A51F /* Makefile */;
+			remoteGlobalIDString = A03AD74211D14D0900F5A51F;
 			remoteInfo = Makefile;
 		};
 		A03ADE3C11D152AB00F5A51F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A03AD74211D14D0900F5A51F /* Makefile */;
+			remoteGlobalIDString = A03AD74211D14D0900F5A51F;
 			remoteInfo = Makefile;
 		};
 		A03ADE4D11D1531600F5A51F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A03ADDBD11D14F1200F5A51F /* ldap */;
+			remoteGlobalIDString = A03ADDBD11D14F1200F5A51F;
 			remoteInfo = ldap;
 		};
 		A03ADE4F11D1531600F5A51F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A03ADE2911D1520A00F5A51F /* lber */;
+			remoteGlobalIDString = A03ADE2911D1520A00F5A51F;
 			remoteInfo = lber;
 		};
 /* End PBXContainerItemProxy section */
