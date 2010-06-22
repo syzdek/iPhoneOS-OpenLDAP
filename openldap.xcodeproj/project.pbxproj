@@ -6,6 +6,21 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		A03ADE4A11D1530F00F5A51F /* openldap */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A03ADE5211D1531F00F5A51F /* Build configuration list for PBXAggregateTarget "openldap" */;
+			buildPhases = (
+			);
+			dependencies = (
+				A03ADE4E11D1531600F5A51F /* PBXTargetDependency */,
+				A03ADE5011D1531600F5A51F /* PBXTargetDependency */,
+			);
+			name = openldap;
+			productName = openldap;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		A03ADDC111D14F1D00F5A51F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		A03ADDC411D1500400F5A51F /* abandon.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3611D14DED00F5A51F /* abandon.c */; };
@@ -98,6 +113,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = A03AD74211D14D0900F5A51F /* Makefile */;
 			remoteInfo = Makefile;
+		};
+		A03ADE4D11D1531600F5A51F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03ADDBD11D14F1200F5A51F /* ldap */;
+			remoteInfo = ldap;
+		};
+		A03ADE4F11D1531600F5A51F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03ADE2911D1520A00F5A51F /* lber */;
+			remoteInfo = lber;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -4136,6 +4165,7 @@
 				A03AD74211D14D0900F5A51F /* Makefile */,
 				A03ADDBD11D14F1200F5A51F /* ldap */,
 				A03ADE2911D1520A00F5A51F /* lber */,
+				A03ADE4A11D1530F00F5A51F /* openldap */,
 			);
 		};
 /* End PBXProject section */
@@ -4233,6 +4263,16 @@
 			isa = PBXTargetDependency;
 			target = A03AD74211D14D0900F5A51F /* Makefile */;
 			targetProxy = A03ADE3C11D152AB00F5A51F /* PBXContainerItemProxy */;
+		};
+		A03ADE4E11D1531600F5A51F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03ADDBD11D14F1200F5A51F /* ldap */;
+			targetProxy = A03ADE4D11D1531600F5A51F /* PBXContainerItemProxy */;
+		};
+		A03ADE5011D1531600F5A51F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03ADE2911D1520A00F5A51F /* lber */;
+			targetProxy = A03ADE4F11D1531600F5A51F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4353,6 +4393,27 @@
 			};
 			name = Release;
 		};
+		A03ADE4B11D1530F00F5A51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = openldap;
+			};
+			name = Debug;
+		};
+		A03ADE4C11D1530F00F5A51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = openldap;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4388,6 +4449,15 @@
 			buildConfigurations = (
 				A03ADE2B11D1520A00F5A51F /* Debug */,
 				A03ADE2C11D1520A00F5A51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03ADE5211D1531F00F5A51F /* Build configuration list for PBXAggregateTarget "openldap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03ADE4B11D1530F00F5A51F /* Debug */,
+				A03ADE4C11D1530F00F5A51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
