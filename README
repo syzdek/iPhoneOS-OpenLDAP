@@ -34,7 +34,7 @@ Software Requirements
 
    Git 1.6.6
    Mac OS X 10.6.3
-   Xcode 3.2.3
+   Xcode 3.2.2
    iPhone SDK 3.2
 
    iOpenLDAP has been tested to build OpenLDAP 2.4.22 using the above
