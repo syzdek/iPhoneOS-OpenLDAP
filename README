@@ -37,8 +37,8 @@ Software Requirements
    Xcode 3.2.2
    iPhone SDK 3.2
 
-   iOpenLDAP has been tested to build OpenLDAP 2.4.22 using the above
-   software versions.
+   iPhone OS OpenLDAP Library has been tested to build OpenLDAP 2.4.22 using
+   the above software versions.
 
 
 Maintainers
