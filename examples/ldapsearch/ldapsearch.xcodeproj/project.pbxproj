@@ -15,7 +15,33 @@
 		2860E32E111B888700E27156 /* AppDelegate_Pad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_Pad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_Pad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_Pad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		A0A53AC011D15822007EE6C4 /* libldap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A53ABB11D15804007EE6C4 /* libldap.a */; };
+		A0A53AC111D15822007EE6C4 /* liblber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A53ABD11D15804007EE6C4 /* liblber.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0A53ABA11D15804007EE6C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A03ADDBE11D14F1200F5A51F /* libldap.a */;
+			remoteInfo = ldap;
+		};
+		A0A53ABC11D15804007EE6C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A03ADE2A11D1520A00F5A51F /* liblber.a */;
+			remoteInfo = lber;
+		};
+		A0A53ABE11D1581A007EE6C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A03ADE4A11D1530F00F5A51F /* openldap */;
+			remoteInfo = openldap;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -31,6 +57,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ldapsearch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldapsearch_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ldapsearch-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ldapsearch-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = ../../openldap.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A53AC011D15822007EE6C4 /* libldap.a in Frameworks */,
+				A0A53AC111D15822007EE6C4 /* liblber.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -90,6 +119,7 @@
 				2860E324111B887F00E27156 /* iPhone */,
 				28EEBF621118D79A00187D67 /* Shared */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				A0A53AB211D157F1007EE6C4 /* Projects */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -115,6 +145,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A0A53AB211D157F1007EE6C4 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		A0A53AB411D15804007EE6C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0A53ABB11D15804007EE6C4 /* libldap.a */,
+				A0A53ABD11D15804007EE6C4 /* liblber.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +176,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A0A53ABF11D1581A007EE6C4 /* PBXTargetDependency */,
 			);
 			name = ldapsearch;
 			productName = ldapsearch;
@@ -145,12 +193,35 @@
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A0A53AB411D15804007EE6C4 /* Products */;
+					ProjectRef = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* ldapsearch */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A0A53ABB11D15804007EE6C4 /* libldap.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libldap.a;
+			remoteRef = A0A53ABA11D15804007EE6C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0A53ABD11D15804007EE6C4 /* liblber.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblber.a;
+			remoteRef = A0A53ABC11D15804007EE6C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -176,6 +247,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0A53ABF11D1581A007EE6C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openldap;
+			targetProxy = A0A53ABE11D1581A007EE6C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
