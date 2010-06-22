@@ -6,6 +6,81 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A03ADDC111D14F1D00F5A51F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		A03ADDC411D1500400F5A51F /* abandon.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3611D14DED00F5A51F /* abandon.c */; };
+		A03ADDC511D1500400F5A51F /* add.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3711D14DED00F5A51F /* add.c */; };
+		A03ADDC611D1500400F5A51F /* addentry.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3811D14DED00F5A51F /* addentry.c */; };
+		A03ADDC711D1500400F5A51F /* assertion.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3A11D14DED00F5A51F /* assertion.c */; };
+		A03ADDC811D1500400F5A51F /* bind.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3B11D14DED00F5A51F /* bind.c */; };
+		A03ADDC911D1500400F5A51F /* cancel.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3C11D14DED00F5A51F /* cancel.c */; };
+		A03ADDCA11D1500400F5A51F /* charray.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3D11D14DED00F5A51F /* charray.c */; };
+		A03ADDCB11D1500400F5A51F /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3E11D14DED00F5A51F /* compare.c */; };
+		A03ADDCC11D1500400F5A51F /* controls.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3F11D14DED00F5A51F /* controls.c */; };
+		A03ADDCD11D1500400F5A51F /* cyrus.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4011D14DED00F5A51F /* cyrus.c */; };
+		A03ADDCE11D1500400F5A51F /* dds.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4111D14DED00F5A51F /* dds.c */; };
+		A03ADDCF11D1500400F5A51F /* delete.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4211D14DED00F5A51F /* delete.c */; };
+		A03ADDD011D1500400F5A51F /* deref.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4311D14DED00F5A51F /* deref.c */; };
+		A03ADDD111D1500400F5A51F /* dnssrv.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4411D14DED00F5A51F /* dnssrv.c */; };
+		A03ADDD211D1500400F5A51F /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4611D14DED00F5A51F /* error.c */; };
+		A03ADDD311D1500400F5A51F /* extended.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4711D14DED00F5A51F /* extended.c */; };
+		A03ADDD411D1500400F5A51F /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4811D14DED00F5A51F /* filter.c */; };
+		A03ADDD511D1500400F5A51F /* free.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4911D14DED00F5A51F /* free.c */; };
+		A03ADDD611D1500400F5A51F /* getattr.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4B11D14DED00F5A51F /* getattr.c */; };
+		A03ADDD711D1500400F5A51F /* getdn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4C11D14DED00F5A51F /* getdn.c */; };
+		A03ADDD811D1500400F5A51F /* getentry.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4D11D14DED00F5A51F /* getentry.c */; };
+		A03ADDD911D1500400F5A51F /* getvalues.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4E11D14DED00F5A51F /* getvalues.c */; };
+		A03ADDDA11D1500400F5A51F /* gssapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4F11D14DED00F5A51F /* gssapi.c */; };
+		A03ADDDB11D1500400F5A51F /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5011D14DED00F5A51F /* init.c */; };
+		A03ADDDC11D1500400F5A51F /* ldap_sync.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5411D14DED00F5A51F /* ldap_sync.c */; };
+		A03ADDDD11D1500400F5A51F /* messages.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5511D14DED00F5A51F /* messages.c */; };
+		A03ADDDE11D1500400F5A51F /* modify.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5611D14DED00F5A51F /* modify.c */; };
+		A03ADDDF11D1500400F5A51F /* modrdn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5711D14DED00F5A51F /* modrdn.c */; };
+		A03ADDE011D1500400F5A51F /* open.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5811D14DED00F5A51F /* open.c */; };
+		A03ADDE111D1500400F5A51F /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5911D14DED00F5A51F /* options.c */; };
+		A03ADDE211D1500400F5A51F /* os-ip.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5A11D14DED00F5A51F /* os-ip.c */; };
+		A03ADDE311D1500400F5A51F /* os-local.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5B11D14DED00F5A51F /* os-local.c */; };
+		A03ADDE411D1500400F5A51F /* pagectrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5C11D14DED00F5A51F /* pagectrl.c */; };
+		A03ADDE511D1500400F5A51F /* passwd.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5D11D14DED00F5A51F /* passwd.c */; };
+		A03ADDE611D1500400F5A51F /* ppolicy.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5E11D14DED00F5A51F /* ppolicy.c */; };
+		A03ADDE711D1500400F5A51F /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5F11D14DED00F5A51F /* print.c */; };
+		A03ADDE811D1500400F5A51F /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6011D14DED00F5A51F /* references.c */; };
+		A03ADDE911D1500400F5A51F /* request.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6111D14DED00F5A51F /* request.c */; };
+		A03ADDEA11D1500400F5A51F /* result.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6211D14DED00F5A51F /* result.c */; };
+		A03ADDEB11D1500400F5A51F /* sasl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6311D14DED00F5A51F /* sasl.c */; };
+		A03ADDEC11D1500400F5A51F /* sbind.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6411D14DED00F5A51F /* sbind.c */; };
+		A03ADDED11D1500400F5A51F /* schema.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6511D14DED00F5A51F /* schema.c */; };
+		A03ADDEE11D1500400F5A51F /* search.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6611D14DED00F5A51F /* search.c */; };
+		A03ADDEF11D1500400F5A51F /* sort.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6711D14DED00F5A51F /* sort.c */; };
+		A03ADDF011D1500400F5A51F /* sortctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6811D14DED00F5A51F /* sortctrl.c */; };
+		A03ADDF111D1500400F5A51F /* stctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6911D14DED00F5A51F /* stctrl.c */; };
+		A03ADDF211D1500400F5A51F /* string.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6A11D14DED00F5A51F /* string.c */; };
+		A03ADDF311D1500400F5A51F /* turn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7111D14DED00F5A51F /* turn.c */; };
+		A03ADDF411D1500400F5A51F /* txn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7211D14DED00F5A51F /* txn.c */; };
+		A03ADDF511D1500400F5A51F /* unbind.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7311D14DED00F5A51F /* unbind.c */; };
+		A03ADDF611D1500400F5A51F /* url.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7411D14DED00F5A51F /* url.c */; };
+		A03ADDF711D1500400F5A51F /* utf-8-conv.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7611D14DED00F5A51F /* utf-8-conv.c */; };
+		A03ADDF811D1500400F5A51F /* utf-8.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7711D14DED00F5A51F /* utf-8.c */; };
+		A03ADDF911D1500400F5A51F /* util-int.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7811D14DED00F5A51F /* util-int.c */; };
+		A03ADDFA11D1500400F5A51F /* vlvctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7911D14DED00F5A51F /* vlvctrl.c */; };
+		A03ADDFB11D1500400F5A51F /* whoami.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7A11D14DED00F5A51F /* whoami.c */; };
+		A03ADE0F11D1511A00F5A51F /* ldap.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA0711D14DED00F5A51F /* ldap.h */; };
+		A03ADE1011D1511E00F5A51F /* ldap_cdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA0811D14DED00F5A51F /* ldap_cdefs.h */; };
+		A03ADE1111D1512500F5A51F /* ldap_schema.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA1311D14DED00F5A51F /* ldap_schema.h */; };
+		A03ADE1211D1512500F5A51F /* ldap_utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA1411D14DED00F5A51F /* ldap_utf8.h */; };
+		A03ADE1411D1514800F5A51F /* ldap_features.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADDB611D14EB000F5A51F /* ldap_features.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A03ADE0011D1501B00F5A51F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03AD74211D14D0900F5A51F /* Makefile */;
+			remoteInfo = Makefile;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A03AD73411D14A0400F5A51F /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		A03AD73511D14A0400F5A51F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -1539,13 +1614,26 @@
 		A03ADDB511D14EB000F5A51F /* ldap_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_config.h; sourceTree = "<group>"; };
 		A03ADDB611D14EB000F5A51F /* ldap_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_features.h; sourceTree = "<group>"; };
 		A03ADDB711D14EB000F5A51F /* portable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portable.h; sourceTree = "<group>"; };
+		A03ADDBE11D14F1200F5A51F /* libldap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libldap.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A03ADDBC11D14F1200F5A51F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03ADDC111D14F1D00F5A51F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				A03ADDBE11D14F1200F5A51F /* libldap.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3925,6 +4013,21 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A03ADDBA11D14F1200F5A51F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03ADE0F11D1511A00F5A51F /* ldap.h in Headers */,
+				A03ADE1011D1511E00F5A51F /* ldap_cdefs.h in Headers */,
+				A03ADE1411D1514800F5A51F /* ldap_features.h in Headers */,
+				A03ADE1111D1512500F5A51F /* ldap_schema.h in Headers */,
+				A03ADE1211D1512500F5A51F /* ldap_utf8.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXLegacyTarget section */
 		A03AD74211D14D0900F5A51F /* Makefile */ = {
 			isa = PBXLegacyTarget;
@@ -3941,6 +4044,27 @@
 		};
 /* End PBXLegacyTarget section */
 
+/* Begin PBXNativeTarget section */
+		A03ADDBD11D14F1200F5A51F /* ldap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03ADDC211D14F3B00F5A51F /* Build configuration list for PBXNativeTarget "ldap" */;
+			buildPhases = (
+				A03ADDBA11D14F1200F5A51F /* Headers */,
+				A03ADDBB11D14F1200F5A51F /* Sources */,
+				A03ADDBC11D14F1200F5A51F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A03ADE0111D1501B00F5A51F /* PBXTargetDependency */,
+			);
+			name = ldap;
+			productName = ldap;
+			productReference = A03ADDBE11D14F1200F5A51F /* libldap.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
@@ -3953,9 +4077,84 @@
 			projectRoot = "";
 			targets = (
 				A03AD74211D14D0900F5A51F /* Makefile */,
+				A03ADDBD11D14F1200F5A51F /* ldap */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A03ADDBB11D14F1200F5A51F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03ADDC411D1500400F5A51F /* abandon.c in Sources */,
+				A03ADDC511D1500400F5A51F /* add.c in Sources */,
+				A03ADDC611D1500400F5A51F /* addentry.c in Sources */,
+				A03ADDC711D1500400F5A51F /* assertion.c in Sources */,
+				A03ADDC811D1500400F5A51F /* bind.c in Sources */,
+				A03ADDC911D1500400F5A51F /* cancel.c in Sources */,
+				A03ADDCA11D1500400F5A51F /* charray.c in Sources */,
+				A03ADDCB11D1500400F5A51F /* compare.c in Sources */,
+				A03ADDCC11D1500400F5A51F /* controls.c in Sources */,
+				A03ADDCD11D1500400F5A51F /* cyrus.c in Sources */,
+				A03ADDCE11D1500400F5A51F /* dds.c in Sources */,
+				A03ADDCF11D1500400F5A51F /* delete.c in Sources */,
+				A03ADDD011D1500400F5A51F /* deref.c in Sources */,
+				A03ADDD111D1500400F5A51F /* dnssrv.c in Sources */,
+				A03ADDD211D1500400F5A51F /* error.c in Sources */,
+				A03ADDD311D1500400F5A51F /* extended.c in Sources */,
+				A03ADDD411D1500400F5A51F /* filter.c in Sources */,
+				A03ADDD511D1500400F5A51F /* free.c in Sources */,
+				A03ADDD611D1500400F5A51F /* getattr.c in Sources */,
+				A03ADDD711D1500400F5A51F /* getdn.c in Sources */,
+				A03ADDD811D1500400F5A51F /* getentry.c in Sources */,
+				A03ADDD911D1500400F5A51F /* getvalues.c in Sources */,
+				A03ADDDA11D1500400F5A51F /* gssapi.c in Sources */,
+				A03ADDDB11D1500400F5A51F /* init.c in Sources */,
+				A03ADDDC11D1500400F5A51F /* ldap_sync.c in Sources */,
+				A03ADDDD11D1500400F5A51F /* messages.c in Sources */,
+				A03ADDDE11D1500400F5A51F /* modify.c in Sources */,
+				A03ADDDF11D1500400F5A51F /* modrdn.c in Sources */,
+				A03ADDE011D1500400F5A51F /* open.c in Sources */,
+				A03ADDE111D1500400F5A51F /* options.c in Sources */,
+				A03ADDE211D1500400F5A51F /* os-ip.c in Sources */,
+				A03ADDE311D1500400F5A51F /* os-local.c in Sources */,
+				A03ADDE411D1500400F5A51F /* pagectrl.c in Sources */,
+				A03ADDE511D1500400F5A51F /* passwd.c in Sources */,
+				A03ADDE611D1500400F5A51F /* ppolicy.c in Sources */,
+				A03ADDE711D1500400F5A51F /* print.c in Sources */,
+				A03ADDE811D1500400F5A51F /* references.c in Sources */,
+				A03ADDE911D1500400F5A51F /* request.c in Sources */,
+				A03ADDEA11D1500400F5A51F /* result.c in Sources */,
+				A03ADDEB11D1500400F5A51F /* sasl.c in Sources */,
+				A03ADDEC11D1500400F5A51F /* sbind.c in Sources */,
+				A03ADDED11D1500400F5A51F /* schema.c in Sources */,
+				A03ADDEE11D1500400F5A51F /* search.c in Sources */,
+				A03ADDEF11D1500400F5A51F /* sort.c in Sources */,
+				A03ADDF011D1500400F5A51F /* sortctrl.c in Sources */,
+				A03ADDF111D1500400F5A51F /* stctrl.c in Sources */,
+				A03ADDF211D1500400F5A51F /* string.c in Sources */,
+				A03ADDF311D1500400F5A51F /* turn.c in Sources */,
+				A03ADDF411D1500400F5A51F /* txn.c in Sources */,
+				A03ADDF511D1500400F5A51F /* unbind.c in Sources */,
+				A03ADDF611D1500400F5A51F /* url.c in Sources */,
+				A03ADDF711D1500400F5A51F /* utf-8-conv.c in Sources */,
+				A03ADDF811D1500400F5A51F /* utf-8.c in Sources */,
+				A03ADDF911D1500400F5A51F /* util-int.c in Sources */,
+				A03ADDFA11D1500400F5A51F /* vlvctrl.c in Sources */,
+				A03ADDFB11D1500400F5A51F /* whoami.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A03ADE0111D1501B00F5A51F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03AD74211D14D0900F5A51F /* Makefile */;
+			targetProxy = A03ADE0011D1501B00F5A51F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB922308733DC00010E9CD /* Debug */ = {
@@ -4006,6 +4205,41 @@
 			};
 			name = Release;
 		};
+		A03ADDBF11D14F1200F5A51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					openldap/include,
+					include,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ldap;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		A03ADDC011D14F1200F5A51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = (
+					openldap/include,
+					include,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ldap;
+				USER_HEADER_SEARCH_PATHS = "";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4023,6 +4257,15 @@
 			buildConfigurations = (
 				A03AD74311D14D0900F5A51F /* Debug */,
 				A03AD74411D14D0900F5A51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03ADDC211D14F3B00F5A51F /* Build configuration list for PBXNativeTarget "ldap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03ADDBF11D14F1200F5A51F /* Debug */,
+				A03ADDC011D14F1200F5A51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
