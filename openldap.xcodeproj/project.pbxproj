@@ -1669,6 +1669,7 @@
 		A03ADDB711D14EB000F5A51F /* portable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portable.h; sourceTree = "<group>"; };
 		A03ADDBE11D14F1200F5A51F /* libldap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libldap.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03ADE2A11D1520A00F5A51F /* liblber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblber.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A53AFF11D15A60007EE6C4 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -1707,6 +1708,7 @@
 				A03AD73411D14A0400F5A51F /* COPYING */,
 				A03AD73711D14A4800F5A51F /* Makefile */,
 				A03AD73511D14A0400F5A51F /* README */,
+				A0A53AFF11D15A60007EE6C4 /* TODO */,
 				A03AD73911D14CDE00F5A51F /* build-aux */,
 				A03ADDB311D14EB000F5A51F /* include */,
 				A03AD75311D14DEC00F5A51F /* openldap */,
