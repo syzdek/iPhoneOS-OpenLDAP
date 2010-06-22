@@ -53,14 +53,14 @@ Source Code
 ===========
 
    Browse Source:
-      http://github.com/syzdek/iPhone-OS-OpenLDAP-Library
+      http://github.com/syzdek/iPhoneOS-OpenLDAP
 
    Git URLs:
-      git://github.com/syzdek/iPhone-OS-OpenLDAP-Library.git
+      git://github.com/syzdek/iPhoneOS-OpenLDAP.git
 
    Downloading Source:
 
-      $ git clone git://github.com/syzdek/iPhone-OS-OpenLDAP-Library.git
+      $ git clone git://github.com/syzdek/iPhoneOS-OpenLDAP.git
 
    Git Branches:
       master - Current release of packages.
