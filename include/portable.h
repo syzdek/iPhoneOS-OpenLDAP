@@ -752,7 +752,7 @@
 /* #undef HAVE_THR_YIELD */
 
 /* define if you have TLS */
-#define HAVE_TLS 1
+/* #undef HAVE_TLS */
 
 /* Define to 1 if you have the <unicode/utypes.h> header file. */
 /* #undef HAVE_UNICODE_UTYPES_H */
