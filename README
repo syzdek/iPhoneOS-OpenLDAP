@@ -57,6 +57,9 @@ Source Code
 
    Git URLs:
       git://github.com/syzdek/iPhoneOS-OpenLDAP.git
+      git://git.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iPhoneOS/openldap.git
+      http://http.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iPhoneOS/openldap.git
+      ssh://ssh.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iPhoneOS/openldap.git
 
    Downloading Source:
 
