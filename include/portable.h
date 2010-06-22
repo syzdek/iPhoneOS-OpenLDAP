@@ -128,7 +128,7 @@
 #define HAVE_CTIME_R 1
 
 /* define if you have Cyrus SASL */
-#define HAVE_CYRUS_SASL 1
+/* #undef HAVE_CYRUS_SASL */
 
 /* Define to 1 if you have the <db.h> header file. */
 /* #undef HAVE_DB_H */
@@ -477,10 +477,10 @@
 /* #undef HAVE_SASL_H */
 
 /* Define to 1 if you have the <sasl/sasl.h> header file. */
-#define HAVE_SASL_SASL_H 1
+/* #undef HAVE_SASL_SASL_H */
 
 /* define if your SASL library has sasl_version() */
-#define HAVE_SASL_VERSION 1
+/* #undef HAVE_SASL_VERSION */
 
 /* Define to 1 if you have the <sched.h> header file. */
 #define HAVE_SCHED_H 1
