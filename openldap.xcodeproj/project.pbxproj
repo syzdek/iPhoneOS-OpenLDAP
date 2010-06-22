@@ -69,10 +69,30 @@
 		A03ADE1111D1512500F5A51F /* ldap_schema.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA1311D14DED00F5A51F /* ldap_schema.h */; };
 		A03ADE1211D1512500F5A51F /* ldap_utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA1411D14DED00F5A51F /* ldap_utf8.h */; };
 		A03ADE1411D1514800F5A51F /* ldap_features.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADDB611D14EB000F5A51F /* ldap_features.h */; };
+		A03ADE2D11D1521C00F5A51F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		A03ADE3011D1526400F5A51F /* assert.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2511D14DED00F5A51F /* assert.c */; };
+		A03ADE3111D1526400F5A51F /* bprint.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2611D14DED00F5A51F /* bprint.c */; };
+		A03ADE3211D1526400F5A51F /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2711D14DED00F5A51F /* debug.c */; };
+		A03ADE3311D1526400F5A51F /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2811D14DED00F5A51F /* decode.c */; };
+		A03ADE3411D1526400F5A51F /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2A11D14DED00F5A51F /* encode.c */; };
+		A03ADE3511D1526400F5A51F /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2D11D14DED00F5A51F /* io.c */; };
+		A03ADE3611D1526400F5A51F /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2F11D14DED00F5A51F /* memory.c */; };
+		A03ADE3711D1526400F5A51F /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3111D14DED00F5A51F /* options.c */; };
+		A03ADE3811D1526400F5A51F /* sockbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3211D14DED00F5A51F /* sockbuf.c */; };
+		A03ADE3911D1526400F5A51F /* stdio.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3311D14DED00F5A51F /* stdio.c */; };
+		A03ADE3A11D1529700F5A51F /* lber.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA0411D14DED00F5A51F /* lber.h */; };
+		A03ADE3B11D152A200F5A51F /* lber_types.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADDB411D14EB000F5A51F /* lber_types.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A03ADE0011D1501B00F5A51F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03AD74211D14D0900F5A51F /* Makefile */;
+			remoteInfo = Makefile;
+		};
+		A03ADE3C11D152AB00F5A51F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
@@ -1615,6 +1635,7 @@
 		A03ADDB611D14EB000F5A51F /* ldap_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_features.h; sourceTree = "<group>"; };
 		A03ADDB711D14EB000F5A51F /* portable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portable.h; sourceTree = "<group>"; };
 		A03ADDBE11D14F1200F5A51F /* libldap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libldap.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03ADE2A11D1520A00F5A51F /* liblber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblber.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -1627,6 +1648,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A03ADE2811D1520A00F5A51F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03ADE2D11D1521C00F5A51F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1634,6 +1663,7 @@
 			isa = PBXGroup;
 			children = (
 				A03ADDBE11D14F1200F5A51F /* libldap.a */,
+				A03ADE2A11D1520A00F5A51F /* liblber.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4026,6 +4056,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A03ADE2611D1520A00F5A51F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03ADE3B11D152A200F5A51F /* lber_types.h in Headers */,
+				A03ADE3A11D1529700F5A51F /* lber.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXLegacyTarget section */
@@ -4063,6 +4102,24 @@
 			productReference = A03ADDBE11D14F1200F5A51F /* libldap.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		A03ADE2911D1520A00F5A51F /* lber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03ADE2F11D1523A00F5A51F /* Build configuration list for PBXNativeTarget "lber" */;
+			buildPhases = (
+				A03ADE2611D1520A00F5A51F /* Headers */,
+				A03ADE2711D1520A00F5A51F /* Sources */,
+				A03ADE2811D1520A00F5A51F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A03ADE3D11D152AB00F5A51F /* PBXTargetDependency */,
+			);
+			name = lber;
+			productName = lber;
+			productReference = A03ADE2A11D1520A00F5A51F /* liblber.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -4078,6 +4135,7 @@
 			targets = (
 				A03AD74211D14D0900F5A51F /* Makefile */,
 				A03ADDBD11D14F1200F5A51F /* ldap */,
+				A03ADE2911D1520A00F5A51F /* lber */,
 			);
 		};
 /* End PBXProject section */
@@ -4146,6 +4204,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A03ADE2711D1520A00F5A51F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03ADE3011D1526400F5A51F /* assert.c in Sources */,
+				A03ADE3111D1526400F5A51F /* bprint.c in Sources */,
+				A03ADE3211D1526400F5A51F /* debug.c in Sources */,
+				A03ADE3311D1526400F5A51F /* decode.c in Sources */,
+				A03ADE3411D1526400F5A51F /* encode.c in Sources */,
+				A03ADE3511D1526400F5A51F /* io.c in Sources */,
+				A03ADE3611D1526400F5A51F /* memory.c in Sources */,
+				A03ADE3711D1526400F5A51F /* options.c in Sources */,
+				A03ADE3811D1526400F5A51F /* sockbuf.c in Sources */,
+				A03ADE3911D1526400F5A51F /* stdio.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -4153,6 +4228,11 @@
 			isa = PBXTargetDependency;
 			target = A03AD74211D14D0900F5A51F /* Makefile */;
 			targetProxy = A03ADE0011D1501B00F5A51F /* PBXContainerItemProxy */;
+		};
+		A03ADE3D11D152AB00F5A51F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03AD74211D14D0900F5A51F /* Makefile */;
+			targetProxy = A03ADE3C11D152AB00F5A51F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4240,6 +4320,39 @@
 			};
 			name = Release;
 		};
+		A03ADE2B11D1520A00F5A51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					openldap/include,
+					include,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = lber;
+			};
+			name = Debug;
+		};
+		A03ADE2C11D1520A00F5A51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = (
+					openldap/include,
+					include,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = lber;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4266,6 +4379,15 @@
 			buildConfigurations = (
 				A03ADDBF11D14F1200F5A51F /* Debug */,
 				A03ADDC011D14F1200F5A51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03ADE2F11D1523A00F5A51F /* Build configuration list for PBXNativeTarget "lber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03ADE2B11D1520A00F5A51F /* Debug */,
+				A03ADE2C11D1520A00F5A51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
