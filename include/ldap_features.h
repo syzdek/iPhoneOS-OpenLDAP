@@ -53,7 +53,7 @@
 */
 
 /* is -lldap_r available or not */
-#define LDAP_API_FEATURE_X_OPENLDAP_THREAD_SAFE 1
+/* #undef LDAP_API_FEATURE_X_OPENLDAP_THREAD_SAFE */
 
 /* LDAP v2 Referrals */
 /* #undef LDAP_API_FEATURE_X_OPENLDAP_V2_REFERRALS */
