@@ -24,22 +24,29 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = A03ADDBE11D14F1200F5A51F /* libldap.a */;
+			remoteGlobalIDString = A03ADDBE11D14F1200F5A51F;
 			remoteInfo = ldap;
 		};
 		A0A53ABC11D15804007EE6C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = A03ADE2A11D1520A00F5A51F /* liblber.a */;
+			remoteGlobalIDString = A03ADE2A11D1520A00F5A51F;
 			remoteInfo = lber;
 		};
-		A0A53ABE11D1581A007EE6C4 /* PBXContainerItemProxy */ = {
+		A0C0848411D16E5000A1AE4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = A03ADE4A11D1530F00F5A51F /* openldap */;
-			remoteInfo = openldap;
+			remoteGlobalIDString = A03ADDBD11D14F1200F5A51F /* ldap */;
+			remoteInfo = ldap;
+		};
+		A0C0848611D16E5000A1AE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A03ADE2911D1520A00F5A51F /* lber */;
+			remoteInfo = lber;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -176,7 +183,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				A0A53ABF11D1581A007EE6C4 /* PBXTargetDependency */,
+				A0C0848511D16E5000A1AE4E /* PBXTargetDependency */,
+				A0C0848711D16E5000A1AE4E /* PBXTargetDependency */,
 			);
 			name = ldapsearch;
 			productName = ldapsearch;
@@ -249,10 +257,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A0A53ABF11D1581A007EE6C4 /* PBXTargetDependency */ = {
+		A0C0848511D16E5000A1AE4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = openldap;
-			targetProxy = A0A53ABE11D1581A007EE6C4 /* PBXContainerItemProxy */;
+			name = ldap;
+			targetProxy = A0C0848411D16E5000A1AE4E /* PBXContainerItemProxy */;
+		};
+		A0C0848711D16E5000A1AE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = lber;
+			targetProxy = A0C0848611D16E5000A1AE4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -266,6 +279,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ldapsearch_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					../../openldap/include,
+					../../include,
+				);
 				INFOPLIST_FILE = "ldapsearch-Info.plist";
 				PRODUCT_NAME = ldapsearch;
 			};
@@ -278,6 +295,10 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ldapsearch_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					../../openldap/include,
+					../../include,
+				);
 				INFOPLIST_FILE = "ldapsearch-Info.plist";
 				PRODUCT_NAME = ldapsearch;
 				VALIDATE_PRODUCT = YES;
