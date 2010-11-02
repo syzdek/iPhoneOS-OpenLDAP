@@ -20,6 +20,17 @@
 
    @BINDLE_BINARIES_LICENSE_END@
 
+*******************************************
+*                                         *
+*      THIS PACKAGE IS NOT MAINTAINED     *
+*                                         *
+*  For updated ports of OpenLDAP, please  *
+*  use iOSPorts hosted on GitHub:         *
+*                                         *
+*  http://github.com/bindle/iOSPorts      *
+*                                         *
+*******************************************
+
 
 iPhone OS OpenLDAP Library
 ==========================
