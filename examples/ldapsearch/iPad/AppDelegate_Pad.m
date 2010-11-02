@@ -22,6 +22,7 @@
 
    int              i;
    int              err;
+   int              ver;
    char           * attribute;
    LDAP           * ld;
    BerValue         cred;
@@ -41,11 +42,25 @@
    dn              = "cn=Directory Manager";
 
    NSLog(@"initialzing LDAP...");
-   ldap_initialize(&ld, "ldap://192.168.100.3/");
+   err = ldap_initialize(&ld, "ldap://10.0.1.3");
+   if (err != LDAP_SUCCESS)
+   {
+      NSLog(@"ldap_initialize(): %s", ldap_err2string(err));
+      return(YES);
+   };
+
+   ver = LDAP_VERSION3;
+   err = ldap_set_option(ld, LDAP_OPT_PROTOCOL_VERSION, &ver);
+   if (err != LDAP_SUCCESS)
+   {
+      NSLog(@"ldap_set_option(): %s", ldap_err2string(err));
+      ldap_unbind_ext_s(ld, NULL, NULL);
+      return(YES);
+   };
 
    NSLog(@"binding to LDAP server...");
    err = ldap_sasl_bind_s(ld, dn, LDAP_SASL_SIMPLE, &cred, NULL, NULL, &servercredp);
-   if (err == LDAP_SUCCESS)
+   if (err != LDAP_SUCCESS)
    {
       NSLog(@"ldap_sasl_bind_s(): %s", ldap_err2string(err));
       ldap_unbind_ext_s(ld, NULL, NULL);
