@@ -1,3 +1,36 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+                    THIS PACKAGE IS NO LONGER MAINTAINED
+
+   For updated versions of the iOS port of OpenLDAP, including support
+   for SSL/TLS and SASL authentication, please use the iOSPorts package.
+
+
+                     http://github.com/bindle/iOSPorts
+
+
+   Due to the difficulty in chaining multiple Xcode projects together in
+   order to build dependencies, I decided to abandon the idea of maintaining
+   each port as a seperate Git repository.  All iOS ports are now maintained
+   in one repository.  Using a unified repository ensures that the directory
+   structure is consistent which makes referencing dependencies with relative
+   paths reliable.
+
+
+   For questions or discussions regarding this port or a port in the iOSPorts
+   collection, please join the mailing list ios-ports@lists.bindlebinaries.com
+   available at:
+
+
+        https://lists.bindlebinaries.com/mailman/listinfo/ios-ports
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
    iPhone OS OpenLDAP Library
    Copyright (C) 2010 Bindle Binaries
@@ -19,17 +52,6 @@
    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110 USA
 
    @BINDLE_BINARIES_LICENSE_END@
-
-*******************************************
-*                                         *
-*      THIS PACKAGE IS NOT MAINTAINED     *
-*                                         *
-*  For updated ports of OpenLDAP, please  *
-*  use iOSPorts hosted on GitHub:         *
-*                                         *
-*  http://github.com/bindle/iOSPorts      *
-*                                         *
-*******************************************
 
 
 iPhone OS OpenLDAP Library
